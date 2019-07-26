@@ -17,6 +17,9 @@ pip install requirements
 ```bash
 $./pycrypt.py -[OPTION] [FILE]
 ```
+Options :
+-D : Decrypt
+-E : Encrypt
 
 # Encrypting
 ```bash
