@@ -48,8 +48,9 @@ def encryptor(key_ , in_file_):
                 #writing the encrypted copy of the chunk and we're done
                 output_.write(encryptor_.encrypt(chunk_))
 
-     #Asking the user if he want to delete the original file
-     delete_original(in_file_)
+    print(f'file encrypted in {output_.name} !')
+    #Asking the user if he want to delete the original file
+    delete_original(in_file_)
 
 
 def decryptor(key_ , encrypted_file):
@@ -79,6 +80,7 @@ def decryptor(key_ , encrypted_file):
                 #the encrypted file comes always with a size multiple to 16
                 output_.write(decryptor_.decrypt(chunk_))
 
+    print(f'File decrypted in {output_.name} !')
     #Asking the user if he want to delete the encrypted file ( the XXXX.sid thing )
     delete_original(encrypted_file)
 
