@@ -15,7 +15,7 @@ pip install requirements
 
 # Usage
 ```bash
-$./crypting.py -[OPTION] [FILE]
+$./pycrypt.py -[OPTION] [FILE]
 ```
 
 # Encrypting
